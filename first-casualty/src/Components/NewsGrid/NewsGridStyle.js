@@ -12,6 +12,6 @@ export const GridContainer = styled.div`
 export const GridItem= styled.div`
 
     background-color: #ddd;
-    padding: 20px;
+    padding: 20%;
     text-align: center;
 `

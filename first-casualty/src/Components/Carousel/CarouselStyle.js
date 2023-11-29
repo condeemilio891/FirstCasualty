@@ -21,7 +21,7 @@ export const MiddleGridContainer = styled.div`
 export const MiddleGridItem= styled.div`
 
     background-color: #ddd;
-    padding: 8%;
+    padding: 15%;
     text-align: center;
    
 `
