@@ -6,7 +6,7 @@ export const Nav = styled.nav`
     background: #63d471;
     height: 85px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 0.2rem calc((100vw - 1000px) / 2);
     z-index: 12;
    
@@ -81,8 +81,28 @@ export const NavBtnLink = styled(Link)`
 `;
 
 export const DateStyle=styled.p`
-        display: flex;
-    align-items: center;
+    
     font-size: 1rem;
     font-weight: bolder;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index: 1;
+    padding-top: 1.5%;
+    padding-left: 2%;
+`
+
+export const NavBarSubtitle= styled.p`
+
+    font-size: .9rem; 
+    color:white;
+    font-style: italic;
+    font-weight: bold;
+    z-index: 1;
+    position: absolute;
+    bottom:20; 
+    left:50;
+    width: 100%;
+    text-align: center;
+    white-space: pre;
 `

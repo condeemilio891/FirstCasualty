@@ -1,13 +1,16 @@
 import Carousel from 'react-bootstrap/Carousel';
 import SamplePic from "../../assets/Photos/userPic.png";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import React from 'react';
+import React, { useEffect } from 'react';
 import { MiddleGridContainer, MiddleGridItem, StyledCarouselContainer, TestText } from "../Carousel/CarouselStyle";
 
 
 
 const BootCarousel = () => {
+
+
   return (
+    
    <>
    {/* Left Carousel */}
     <StyledCarouselContainer float="left">
@@ -43,7 +46,6 @@ const BootCarousel = () => {
 
     <MiddleGridItem>1</MiddleGridItem>
     <MiddleGridItem>2</MiddleGridItem>
-    <MiddleGridItem>3</MiddleGridItem>
    </MiddleGridContainer>
 
 {/* RIght Carousel */}
