@@ -1,14 +1,55 @@
 import React from 'react'
-import { GridContainer,GridItem } from './NewsGridStyle'
+import {MiddleGridContainer,MiddleGridItemContainer,CardArticle,CardImg,CardData,
+CardDescription,CardTitle} from './NewsGridStyle'
+import SamplePic from "../../assets/Photos/userPic.png"
 
 
 const NewsGrid = () => {
   return (
-    <GridContainer>
-        <GridItem>1</GridItem>
-        <GridItem>2</GridItem>
-        <GridItem>3</GridItem>
-    </GridContainer>
+    <MiddleGridContainer>
+
+    <MiddleGridItemContainer>
+      <CardArticle>
+          <CardImg src={SamplePic}></CardImg>
+          <CardData>
+              <CardDescription>
+                Lorem lorm
+              </CardDescription>
+              <CardTitle>
+                Title
+              </CardTitle>
+          </CardData>
+      </CardArticle>
+    </MiddleGridItemContainer>
+
+    <MiddleGridItemContainer>
+      <CardArticle>
+          <CardImg src={SamplePic}></CardImg>
+          <CardData>
+              <CardDescription>
+                Lorem lorm
+              </CardDescription>
+              <CardTitle>
+                Title
+              </CardTitle>
+          </CardData>
+      </CardArticle>
+    </MiddleGridItemContainer>
+    <MiddleGridItemContainer>
+      <CardArticle>
+          <CardImg src={SamplePic}></CardImg>
+          <CardData>
+              <CardDescription>
+                Lorem lorm
+              </CardDescription>
+              <CardTitle>
+                Title
+              </CardTitle>
+          </CardData>
+      </CardArticle>
+    </MiddleGridItemContainer>
+
+ </MiddleGridContainer>
   )
 }
 

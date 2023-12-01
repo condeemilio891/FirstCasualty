@@ -2,7 +2,9 @@ import Carousel from 'react-bootstrap/Carousel';
 import SamplePic from "../../assets/Photos/userPic.png";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { useEffect } from 'react';
-import { MiddleGridContainer, MiddleGridItem, StyledCarouselContainer, TestText } from "../Carousel/CarouselStyle";
+import { MiddleGridContainer, StyledCarouselContainer,
+   MiddleGridItemContainer,CardArticle,CardImg,CardData,
+   CardDescription,CardTitle, CardDataContainer} from "../Carousel/CarouselStyle";
 
 
 
@@ -41,12 +43,35 @@ const BootCarousel = () => {
       </Carousel.Item>
     </Carousel>
     </StyledCarouselContainer>
+
+
+
+
+
 {/* Middle Grid */}
    <MiddleGridContainer>
 
-    <MiddleGridItem>1</MiddleGridItem>
-    <MiddleGridItem>2</MiddleGridItem>
+      <MiddleGridItemContainer>
+        <CardArticle>
+            <CardImg src={SamplePic}></CardImg>
+            {/* <CardDataContainer> */}
+            <CardData>
+                <CardDescription>
+                  Lorem lorm
+                </CardDescription>
+                <CardTitle>
+                  Title
+                </CardTitle>
+            </CardData>
+            {/* </CardDataContainer> */}
+        </CardArticle>
+      </MiddleGridItemContainer>
+
    </MiddleGridContainer>
+
+
+
+
 
 {/* RIght Carousel */}
     <StyledCarouselContainer float="right">
