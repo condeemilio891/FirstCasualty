@@ -12,7 +12,7 @@ const MainTitle = () => {
     </TitleContainerLeft>
 
     <TitleContainerCenter>
-      <MTS> Neutral</MTS>
+      <MTS> VS</MTS>
     </TitleContainerCenter>
 
     <TitleContainerRight>

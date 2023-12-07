@@ -1,5 +1,8 @@
 import Carousel from 'react-bootstrap/Carousel';
-import SamplePic from "../../assets/Photos/userPic.png";
+import SamplePic from "../../assets/Photos/samplePic2.png";
+import SamplePic1 from "../../assets/Photos/samplePic3.png";
+import SamplePic2 from "../../assets/Photos/samplePic4.png";
+import SamplePic3 from "../../assets/Photos/samplePic1.png";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { useEffect } from 'react';
 import { MiddleGridContainer, StyledCarouselContainer,
@@ -25,7 +28,7 @@ const BootCarousel = () => {
           alt="First slide"
         />
         <Carousel.Caption>
-          <h3>First slide label</h3>
+          <h6>First slide label</h6>
           <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
         </Carousel.Caption>
       </Carousel.Item>
@@ -33,43 +36,16 @@ const BootCarousel = () => {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src={SamplePic}
+          src={SamplePic1}
           alt="First slide"
         />
         <Carousel.Caption>
-          <h3>First slide label</h3>
+          <h6>First slide label</h6>
           <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
     </StyledCarouselContainer>
-
-
-
-
-
-{/* Middle Grid */}
-   <MiddleGridContainer>
-
-      <MiddleGridItemContainer>
-        <CardArticle>
-            <CardImg src={SamplePic}></CardImg>
-            {/* <CardDataContainer> */}
-            <CardData>
-                <CardDescription>
-                  Lorem lorm
-                </CardDescription>
-                <CardTitle>
-                  Title
-                </CardTitle>
-            </CardData>
-            {/* </CardDataContainer> */}
-        </CardArticle>
-      </MiddleGridItemContainer>
-
-   </MiddleGridContainer>
-
-
 
 
 
@@ -80,11 +56,11 @@ const BootCarousel = () => {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src={SamplePic}
+          src={SamplePic2}
           alt="First slide"
         />
         <Carousel.Caption>
-          <h3>First slide label</h3>
+          <h6>First slide label</h6>
           <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
         </Carousel.Caption>
       </Carousel.Item>
@@ -92,11 +68,11 @@ const BootCarousel = () => {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src={SamplePic}
+          src={SamplePic3}
           alt="First slide"
         />
         <Carousel.Caption>
-          <h3>First slide label</h3>
+          <h6>First slide label</h6>
           <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
         </Carousel.Caption>
       </Carousel.Item>

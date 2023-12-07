@@ -1,56 +1,58 @@
-import React from 'react'
-import {MiddleGridContainer,MiddleGridItemContainer,CardArticle,CardImg,CardData,
-CardDescription,CardTitle} from './NewsGridStyle'
-import SamplePic from "../../assets/Photos/userPic.png"
+import React, { useState } from 'react';
+import {
+  NewsGridContainer,
+  NewsGridCard,
+  NewsCardImg,
+  NewsAnchor,
+  NewsCardImgHovered,
+  NewsCardInfo,
+  NewsCardAbout,
+  NewsCardTag,
+  NewsCardTitle,
+  NewsCardAuthor
+} from './NewsGridStyle';
+import SamplePic from '../../assets/Photos/samplePic0.png';
+import SamplePic2 from '../../assets/Photos/samplePic1.png';
 
+const NewsCard = ({ backgroundImage, title, author }) => {
+  const [isHovered, setHovered] = useState(false);
+
+  return (
+    <NewsGridCard>
+      <NewsCardImg
+        style={{ backgroundImage: `url(${backgroundImage})` }}
+        className={isHovered ? 'expanded' : ''}
+        onMouseEnter={() => setHovered(true)}
+        onMouseLeave={() => setHovered(false)}
+      />
+
+      <NewsAnchor>
+        <NewsCardImgHovered
+          onMouseEnter={() => setHovered(true)}
+          onMouseLeave={() => setHovered(false)}
+          style={{ backgroundImage: `url(${backgroundImage})` }}
+          className={isHovered ? 'expanded' : ''}
+        ></NewsCardImgHovered>
+      </NewsAnchor>
+      <NewsCardInfo onMouseEnter={() => setHovered(true)} onMouseLeave={() => setHovered(false)}>
+        <NewsCardAbout>
+          <NewsCardTag>News</NewsCardTag>
+        </NewsCardAbout>
+        <NewsCardTitle className={isHovered ? 'expanded' : ''}>{title}</NewsCardTitle>
+        <NewsCardAuthor className={isHovered ? 'expanded' : ''}>{author}</NewsCardAuthor>
+      </NewsCardInfo>
+    </NewsGridCard>
+  );
+};
 
 const NewsGrid = () => {
   return (
-    <MiddleGridContainer>
+    <NewsGridContainer>
+      <NewsCard backgroundImage={SamplePic} title="Title 1" author="Author 1" />
+      <NewsCard backgroundImage={SamplePic2} title="Title 2" author="Author 2" />
+      <NewsCard backgroundImage={SamplePic2} title="Title 3" author="Author 3" />
+    </NewsGridContainer>
+  );
+};
 
-    <MiddleGridItemContainer>
-      <CardArticle>
-          <CardImg src={SamplePic}></CardImg>
-          <CardData>
-              <CardDescription>
-                Lorem lorm
-              </CardDescription>
-              <CardTitle>
-                Title
-              </CardTitle>
-          </CardData>
-      </CardArticle>
-    </MiddleGridItemContainer>
-
-    <MiddleGridItemContainer>
-      <CardArticle>
-          <CardImg src={SamplePic}></CardImg>
-          <CardData>
-              <CardDescription>
-                Lorem lorm
-              </CardDescription>
-              <CardTitle>
-                Title
-              </CardTitle>
-          </CardData>
-      </CardArticle>
-    </MiddleGridItemContainer>
-    <MiddleGridItemContainer>
-      <CardArticle>
-          <CardImg src={SamplePic}></CardImg>
-          <CardData>
-              <CardDescription>
-                Lorem lorm
-              </CardDescription>
-              <CardTitle>
-                Title
-              </CardTitle>
-          </CardData>
-      </CardArticle>
-    </MiddleGridItemContainer>
-
- </MiddleGridContainer>
-  )
-}
-
-export default NewsGrid
+export default NewsGrid;

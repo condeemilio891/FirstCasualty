@@ -11,6 +11,11 @@ margin-bottom :0% ;
 float: ${(props) => props.float || 'none'};
 padding-bottom: 2%;
 `;
+
+
+
+
+//stuff for middle card
 export const MiddleGridContainer = styled.div`
     display: grid;
     
