@@ -17,7 +17,7 @@ flex-direction:column;
 background-image: linear-gradient(#FFFFFF, #0086BE);
 align-items: center;
 justify-content: center;
-width:45%;
+width:50%;
 `
 export const TitleContainerCenter= styled.div`
 display: flex;
@@ -25,12 +25,12 @@ flex-direction:column;
 background-image: linear-gradient(#FFFFFF, #000000);
 align-items: center;
 justify-content: center;
-width: 10%;
+width: 0%;
 `
 export const TitleContainerRight= styled.div`
 display:flex;
 flex-direction: column;
-width: 45%;
+width: 50%;
 align-items: center;
 justify-content: center;
 background-image: linear-gradient(#000000, #007a3d);
