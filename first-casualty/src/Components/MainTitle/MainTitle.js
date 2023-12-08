@@ -7,15 +7,17 @@ const MainTitle = () => {
   <MTSContainer >
 
     <TitleContainerLeft>
-        <MTS>JPost</MTS>
-        <TitlePic src={Flag0}/>
+    <TitlePic src={Flag0}/>
+        <MTS>Jerusalem Post</MTS>
+       
     </TitleContainerLeft>
 
    
 
     <TitleContainerRight>
-        <MTS textColor="#FFFFFF">Al Jazeera</MTS>
-        <TitlePic src={Flag1}/>
+    <TitlePic src={Flag1}/>
+        <MTS textColor="#FFFFFF">Al-Jazeera</MTS>
+        
     </TitleContainerRight>
 
  
