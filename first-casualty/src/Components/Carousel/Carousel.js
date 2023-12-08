@@ -20,9 +20,9 @@ const BootCarousel = () => {
    {/* Left Carousel */}
     <StyledCarouselContainer float="left">
          
-    <Carousel>
-      <Carousel.Item>
-        <img
+    <Carousel >
+      <Carousel.Item >
+        <img style={{ borderRadius: '25px' }}
           className="d-block w-100"
           src={SamplePic}
           alt="First slide"
@@ -31,10 +31,10 @@ const BootCarousel = () => {
           <h6>First slide label</h6>
           <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
         </Carousel.Caption>
-      </Carousel.Item>
+      </Carousel.Item  >
       {/* Add more Carousel.Item for each slide */}
-      <Carousel.Item>
-        <img
+      <Carousel.Item >
+        <img style={{ borderRadius: '25px' }}
           className="d-block w-100"
           src={SamplePic1}
           alt="First slide"
@@ -54,7 +54,7 @@ const BootCarousel = () => {
          
     <Carousel>
       <Carousel.Item>
-        <img
+        <img style={{ borderRadius: '25px' }}
           className="d-block w-100"
           src={SamplePic2}
           alt="First slide"
@@ -65,8 +65,8 @@ const BootCarousel = () => {
         </Carousel.Caption>
       </Carousel.Item>
       {/* Add more Carousel.Item for each slide */}
-      <Carousel.Item>
-        <img
+      <Carousel.Item >
+        <img style={{ borderRadius: '25px' }}
           className="d-block w-100"
           src={SamplePic3}
           alt="First slide"
