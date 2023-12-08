@@ -11,9 +11,7 @@ const MainTitle = () => {
         <TitlePic src={Flag0}/>
     </TitleContainerLeft>
 
-    <TitleContainerCenter>
-      <MTS> Neutral</MTS>
-    </TitleContainerCenter>
+   
 
     <TitleContainerRight>
         <MTS textColor="#FFFFFF">Al Jazeera</MTS>

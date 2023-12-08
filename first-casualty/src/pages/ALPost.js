@@ -7,6 +7,7 @@ import NewsGrid from '../Components/NewsGrid/NewsGrid'
 
 
 const ALPost = () => {
+ 
   return (
     <>
     <MainTitle/>
@@ -14,6 +15,8 @@ const ALPost = () => {
     <AlPageCarouselContainer>
     <BootCarousel/>
     </AlPageCarouselContainer>
+    <NewsGrid/>
+    <NewsGrid/>
     <NewsGrid/>
     </AlPageContainer>
     </>

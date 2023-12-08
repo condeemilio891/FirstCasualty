@@ -1,8 +1,13 @@
 import Carousel from 'react-bootstrap/Carousel';
-import SamplePic from "../../assets/Photos/userPic.png";
+import SamplePic from "../../assets/Photos/samplePic2.png";
+import SamplePic1 from "../../assets/Photos/samplePic3.png";
+import SamplePic2 from "../../assets/Photos/samplePic4.png";
+import SamplePic3 from "../../assets/Photos/samplePic1.png";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { useEffect } from 'react';
-import { MiddleGridContainer, MiddleGridItem, StyledCarouselContainer, TestText } from "../Carousel/CarouselStyle";
+import { MiddleGridContainer, StyledCarouselContainer,
+   MiddleGridItemContainer,CardArticle,CardImg,CardData,
+   CardDescription,CardTitle, CardDataContainer} from "../Carousel/CarouselStyle";
 
 
 
@@ -15,63 +20,59 @@ const BootCarousel = () => {
    {/* Left Carousel */}
     <StyledCarouselContainer float="left">
          
-    <Carousel>
-      <Carousel.Item>
-        <img
+    <Carousel >
+      <Carousel.Item >
+        <img style={{ borderRadius: '25px' }}
           className="d-block w-100"
           src={SamplePic}
           alt="First slide"
         />
         <Carousel.Caption>
-          <h3>First slide label</h3>
+          <h6>First slide label</h6>
           <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
         </Carousel.Caption>
-      </Carousel.Item>
+      </Carousel.Item  >
       {/* Add more Carousel.Item for each slide */}
-      <Carousel.Item>
-        <img
+      <Carousel.Item >
+        <img style={{ borderRadius: '25px' }}
           className="d-block w-100"
-          src={SamplePic}
+          src={SamplePic1}
           alt="First slide"
         />
         <Carousel.Caption>
-          <h3>First slide label</h3>
+          <h6>First slide label</h6>
           <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
     </StyledCarouselContainer>
-{/* Middle Grid */}
-   <MiddleGridContainer>
 
-    <MiddleGridItem>1</MiddleGridItem>
-    <MiddleGridItem>2</MiddleGridItem>
-   </MiddleGridContainer>
+
 
 {/* RIght Carousel */}
     <StyledCarouselContainer float="right">
          
     <Carousel>
       <Carousel.Item>
-        <img
+        <img style={{ borderRadius: '25px' }}
           className="d-block w-100"
-          src={SamplePic}
+          src={SamplePic2}
           alt="First slide"
         />
         <Carousel.Caption>
-          <h3>First slide label</h3>
+          <h6>First slide label</h6>
           <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
         </Carousel.Caption>
       </Carousel.Item>
       {/* Add more Carousel.Item for each slide */}
-      <Carousel.Item>
-        <img
+      <Carousel.Item >
+        <img style={{ borderRadius: '25px' }}
           className="d-block w-100"
-          src={SamplePic}
+          src={SamplePic3}
           alt="First slide"
         />
         <Carousel.Caption>
-          <h3>First slide label</h3>
+          <h6>First slide label</h6>
           <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
         </Carousel.Caption>
       </Carousel.Item>

@@ -7,25 +7,17 @@ display: flex;
 justify-content: space-around;
 /* margin-left:20px;
 margin-right: 20px; */
-padding-top: .5%;
-padding-bottom: .5%;
-`
-export const TitleContainerRight= styled.div`
-display:flex;
-flex-direction: column;
-width: 33.3%;
-align-items: center;
-justify-content: center;
-background-image: linear-gradient(#000000, #007a3d);
 
+padding-bottom: .5%; 
 `
+
 export const TitleContainerLeft= styled.div`
 display: flex;
 flex-direction:column;
 background-image: linear-gradient(#FFFFFF, #0086BE);
 align-items: center;
 justify-content: center;
-width:33.3%;
+width:50%;
 `
 export const TitleContainerCenter= styled.div`
 display: flex;
@@ -33,7 +25,16 @@ flex-direction:column;
 background-image: linear-gradient(#FFFFFF, #000000);
 align-items: center;
 justify-content: center;
-width: 33.3%;
+width: 0%;
+`
+export const TitleContainerRight= styled.div`
+display:flex;
+flex-direction: column;
+width: 50%;
+align-items: center;
+justify-content: center;
+background-image: linear-gradient(#000000, #007a3d);
+
 `
 
 // HEaders

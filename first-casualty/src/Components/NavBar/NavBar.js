@@ -51,9 +51,6 @@ const Navbar = () => {
                 <NavMenu>
                     <DateStyle> {formattedDate}</DateStyle>
                     
-                    <NavLink to="/" >
-                    Israel-Palestine Conflict
-                    </NavLink>
                     <NavLink to="/russiaUkraine" activeStyle>
                     AlJazeera
                     </NavLink>
@@ -75,7 +72,8 @@ const Navbar = () => {
 
                     
                 </NavBtn>
-              <NavBarSubtitle>The     first     casualty     of     war     is     the     Truth.</NavBarSubtitle>
+              <NavBarSubtitle>
+              </NavBarSubtitle>
             </Nav>
         </>
     );
