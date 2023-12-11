@@ -19,8 +19,7 @@ const currentDate = new Date();
   // Format time as hh:mm:ss
   //const formattedTime = `${currentDate.getHours().toString().padStart(2, '0')}:${currentDate.getMinutes().toString().padStart(2, '0')}:${currentDate.getSeconds().toString().padStart(2, '0')}`;
 const Navbar = () => {
-    const apiKey = process.env.REACT_APP_APIKEY; // Get your API key from https://newsapi.org/
-    const apiUrl = 'https://newsapi.org/v2/top-headlines';
+
     
 
     return (
