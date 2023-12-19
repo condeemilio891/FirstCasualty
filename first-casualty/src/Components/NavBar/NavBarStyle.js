@@ -4,7 +4,7 @@ import styled from "styled-components";
  
 export const Nav = styled.nav`
     background-image: linear-gradient(to right,#3A3475, #221C35,#221C35,  #221C35,#3A3475);
-    height: 85px;
+    height: 40px;
     display: flex;
     justify-content: center;
     padding: 0.2rem calc((100vw - 1100px) / 2);
@@ -89,7 +89,7 @@ export const DateStyle=styled.p`
     top:0;
     left:0;
     z-index: 1;
-    padding-top: 1.5%;
+    padding-top: .5%;
     padding-left: 2%;
     color:white;
 `

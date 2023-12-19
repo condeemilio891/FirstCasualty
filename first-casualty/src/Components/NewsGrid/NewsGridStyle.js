@@ -100,8 +100,8 @@ export const NewsCardAbout = styled.div`
 `;
 
 export const NewsCardTag = styled.a`
-  width: 60px;
-  max-width: 100px;
+  width: 100px;
+  max-width: 150px;
   padding: 0.2rem 0.5rem;
   font-size: 12px;
   text-align: center;

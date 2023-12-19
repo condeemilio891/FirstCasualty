@@ -5,18 +5,21 @@ import Flag1 from "../../assets/Photos/flag1.png"
 const MainTitle = () => {
   return (
   <MTSContainer >
-
+       
     <TitleContainerLeft>
-    <TitlePic src={Flag0}/>
-        <MTS>Jerusalem Post</MTS>
+    <TitlePic src={Flag0} borderColor="black"/>
+        
        
     </TitleContainerLeft>
 
    
+    <TitleContainerCenter>
+    <MTS textColor="#FFFFFF">Comparing News Sources</MTS>
 
+    </TitleContainerCenter>
     <TitleContainerRight>
-    <TitlePic src={Flag1}/>
-        <MTS textColor="#FFFFFF">Al-Jazeera</MTS>
+    <TitlePic src={Flag1} />
+      
         
     </TitleContainerRight>
 

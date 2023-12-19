@@ -59,13 +59,13 @@ const NewsGrid = () => {
  
   const fetchNewsData = async () => {
     try {
-      const response1 = await fetch(`${apiUrl}?sources=al-jazeera-english&apiKey=${apiKey}`);
+      const response1 = await fetch(`${apiUrl}?sources=al-jazeera-english&apiKey=${apiKey}&queue=war`);
       const data1 = await response1.json();
   
-      const response2 = await fetch(`${apiUrl}?sources=the-jerusalem-post&apiKey=${apiKey}`);
+      const response2 = await fetch(`${apiUrl}?sources=the-jerusalem-post&apiKey=${apiKey}&queue=war`);
       const data2 = await response2.json();
   
-      const response3 = await fetch(`${apiUrl}?sources=the-times-of-india&apiKey=${apiKey}`);
+      const response3 = await fetch(`${apiUrl}?sources=the-times-of-india&apiKey=${apiKey}&queue=war`);
       const data3 = await response3.json();
   
       // Update state with data from each API call
@@ -111,7 +111,7 @@ const NewsGrid = () => {
           <NewsCard
             key={index}
             backgroundImage={article.urlToImage || SamplePic}
-            source="hello"
+            source={article.source.name||"NA"}
             title={article.title || 'Title Not Available'}
             author={article.author || 'Author Not Available'}
             content={article.content || 'Content Not Available'}

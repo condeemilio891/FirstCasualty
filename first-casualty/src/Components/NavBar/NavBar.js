@@ -30,16 +30,16 @@ const Navbar = () => {
                 <NavMenu>
                     <DateStyle> {formattedDate}</DateStyle>
                     
-                    <NavLink to="/russiaUkraine" activeStyle>
+                    <NavLink to="https://www.aljazeera.com/" activeStyle>
                     AlJazeera
                     </NavLink>
                     <NavLink to="https://israelpalestine.liveuamap.com/" activeStyle>
                     Live-U-Map
                     </NavLink>
-                    <NavLink to="https://israelpalestine.liveuamap.com/" activeStyle>
-                    WION
+                    <NavLink to="https://timesofindia.indiatimes.com/us" activeStyle>
+                    The Times Of India
                     </NavLink>
-                    <NavLink to="/russiaUkraine" activeStyle>
+                    <NavLink to="https://www.jpost.com/" activeStyle>
                     Jerusalem Post
                     </NavLink>
                     

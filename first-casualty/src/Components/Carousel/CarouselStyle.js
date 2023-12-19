@@ -10,6 +10,7 @@ margin: auto;
 margin-bottom :0% ;
 float: ${(props) => props.float || 'none'};
 padding-bottom: 2%;
+padding-top: 2%;
 `;
 
 
